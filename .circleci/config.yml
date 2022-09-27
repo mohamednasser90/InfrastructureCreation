@@ -13,7 +13,7 @@ jobs:
   create_infrastructure:
     docker:
       - image: amazone/aws-cli
-      auth:
+        auth:
           username: $DOCKER_HUB_USERNAME
           password: $DOCKER_HUB_PASSWORD
     steps:
