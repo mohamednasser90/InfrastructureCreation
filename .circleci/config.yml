@@ -27,7 +27,7 @@ jobs:
           name: CF stack
           command: |
             aws cloudformation deploy \
-            --template-file \CF\CF_Template_Create_EC2_instance.yml      \
+            --template-file template.yml      \
             --stack-name   mystack_${CIRCLE_WORKFLOW_ID:0:5} \
             --region us-east-1
 
