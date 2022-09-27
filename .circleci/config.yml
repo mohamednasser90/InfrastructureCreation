@@ -12,7 +12,7 @@ orbs:
 jobs: 
   create_infrastructure:
     docker:
-      - image: amazone/aws-cli
+      - image: amazon/aws-cli:latest
         auth:
           username: $DOCKER_HUB_USERNAME
           password: $DOCKER_HUB_PASSWORD
